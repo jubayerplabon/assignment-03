@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-03</title>
+    <!-- all fremwork and font cdn -->
+    <script src="https://kit.fontawesome.com/5f652f18e6.js" crossorigin="anonymous"></script> 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .font{
+        font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
-<body>
-    
+<body class="font ">
+    <nav class="">
+       <div class=" flex justify-evenly mt-8 ">
+        <h1 class="text-2xl font-bold"> <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full -rotate-45"></i> Rinterio</h1>
+        <i class="lg:hidden fa-solid fa-bars"></i>
+            <ul class=" hidden lg:flex items-center gap-4 ">
+                <li class="text-base font-bold">Home</li>
+                <li class="text-base font-light">Service</li>
+                <li class="text-base font-light">Portfolio</li>
+                <li class="text-base font-light">Blog</li>
+                <li class="text-base font-light">Contact Us</li>
+            </ul>
+            <div class="hidden lg:flex justify-center items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass "></i>  
+                <i class="fa-solid fa-cart-shopping"></i>  
+                <button class="btn bg-lime-600	">Book Consult <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+       </div>
+    </nav>
+    <!-- banner -->
+    <header class=" mb-16">
+        <!-- <div class="">
+            <img src="./assets/banner.png" alt="">
+            <h2 class="text-4xl font-bold">A barn house of this design has a <br> striking appearance</h2>
+            <p class="font-light text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-lime-200 px-8 rounded-3xl">View Details <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full -rotate-45"></i></button>
+        </div> -->
+            <div class="hero-content text-center">
+              <div class="max-w-6xl">
+               <div class="flex relative"> <img class="m-auto" src="./assets/banner.png" alt=""></div>
+                <h2 class="text-4xl font-bold">A barn house of this design has a <br> striking appearance</h2>
+                <br>
+                <p class="font-light text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                <br>
+                <button class=" btn bg-lime-200 px-8 rounded-3xl w-full lg:w-fit ">View Details <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full -rotate-45"></i></button>
+              </div>
+            </div>
+    </header>
+    <!-- section 1 -->
+     <section class="bg-slate-100">
+        <div class="lg:flex justify-around pt-20">
+            <div class="gap-4">
+                <button class="bg-white"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+            <h2 class="text-3xl font-bold">We design thoughtful, <br> liveable spaces</h2>
+            <p class="text-xs font-light">The barn house captivates with its blend of rustic charm and <br>
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <br>
+                <div class="gap-5">
+                    <div class="card card-side bg-base-100 shadow-xl pl-8">
+                        <figure>
+                          <img
+                            src="./assets/commercial.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Commercial</h2>
+                          <p>This card provide you commercial section</p>
+                          <div class="card-actions justify-end">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <br>
+                <div class="">
+                    <div class="card card-side bg-base-100 shadow-xl pl-8">
+                        <figure>
+                          <img
+                            src="./assets/residential.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Residential</h2>
+                          <p>This card provide you residential section </p>
+                          <div class="card-actions justify-end">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </div>
+        <!-- our working style -->
+         <div class="text-center mt-16">
+            <button class="bg-white text-xs"> <i class="fa-solid fa-arrow-right"></i> How We Works</button>
+            <br>
+            <h3 class="font-bold text-4xl">Our Works Style</h3>
+            <br>
+            <p class="font-light">Let me show you Our Working section and what we do! <br> We have so many section for our valuable customer</p>
+         </div>
+         <br>
+         <div class="lg:flex justify-center gap-4">
+            <div class="card w-full shadow-xl bg-purple-100 lg:w-72">
+                <figure class="pt-10">
+                  <img class="start-0"
+                    src="./assets/concept.png"
+                    alt=""/>
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Concept</h2>
+                  <p>If you haven't know how you build on your place,we have clarification</p>
+                </div>
+            </div>
+            <br>
+            <div class="card w-full shadow-xl bg-emerald-300 lg:w-72">
+                <figure class="pt-10">
+                  <img class="start-0"
+                    src="./assets/budget-planning.png"
+                    alt=""/>
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Budget-Planning</h2>
+                  <p>We have so many plan for you, visit our web and see magic</p>
+                </div>
+            </div>
+            <br>
+            <div class="card w-full shadow-xl bg-sky-300 lg:w-72">
+                <figure class="pt-10">
+                  <img class="start-0"
+                    src="./assets/vision.png"
+                    alt=""/>
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Supervision</h2>
+                  <p>we really come for you with falcon eyes</p>
+                </div>
+            </div>
+            <br>
+            <div class="card w-full shadow-xl bg-amber-100 lg:w-72">
+                <figure class="pt-10">
+                  <img class="start-0"
+                    src="./assets/flow-chart.png"
+                    alt=""/>
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Designing</h2>
+                  <p>we provide free magna design for you</p>
+                </div>
+            </div>
+         </div>
+     </section>
 </body>
 </html>
